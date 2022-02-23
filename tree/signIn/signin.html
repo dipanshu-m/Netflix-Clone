@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="signIn.css" />
+  <link rel="icon" href="../../res/netflix-title-icon.png" type="image/icon type" />
+  <title>Netflix Clone</title>
+</head>
+
+<body class="showcase">
+  <header>
+    <br />
+    <div class="nav-header margin-external">
+      <img src="../../res/logo.png" alt="Netflix Logo" class="netflix-logo" id="netflix-logoid" />
+    </div>
+    <br />
+    <br />
+    <div class="wholecontainer">
+      <div class="container-signin header" id="container" style="padding-bottom: 18rem">
+        <h1 class="margin-external" style="padding-bottom: 10px;">Sign In</h1>
+        <div class="margin-external error closed" id="errorshow">Sorry, we can't find an account with this <br> email address. Please
+          try again or <a href="../../index.html" style="text-decoration: underline;" > create a new account.</a></div>
+        <div class="margin-external" id="enteremail">
+          <div class="form-box">Email address or phone number</div>
+          <form onsubmit="return false;">
+            <input type="text" id="emailaddressinputvalue"/>
+          </form>
+        </div>
+
+        <div class="margin-external" id="enteremail">
+          <div class="form-box">Password</div>
+          <form id="password" onsubmit="return false;">
+            <input type="password" id="passwordinput" />
+            <button type="button" id="toggleshowhide" onclick="passwordToggle()">
+              SHOW
+            </button>
+          </form>
+          <div id="sign-in" onclick="signin()">Sign In</div>
+          <div style="display: flex; justify-content: space-between">
+            <div style="display: flex; margin-top: 10px">
+              <input type="checkbox" style="margin-top: 2px" />
+              <p style="padding-left: 5px; font-size: 0.9rem">Remember me</p>
+            </div>
+            <a href="#" style="padding-top: 10px; font-size: 0.9rem; color: #8c8c8c">Need Help?</a>
+          </div>
+
+          <br />
+          <br />
+          <div style="display: flex">
+            <p style="font-size: 1.1rem; color: #8c8c8c">New to Netflix?</p>
+            <a href="../../index.html" style="font-size: 1.1rem; margin-left: 0.2rem">Sign Up now</a>
+          </div>
+          <br />
+          <h2 style="margin-bottom: 100px; color: #8c8c8c">
+            This page is protected by Google reCAPTCHA<br />
+            to ensure you're not a bot.
+            <a href="#" style="color: rgb(0, 106, 255)">Learn more.</a>
+          </h2>
+        </div>
+      </div>
+      <div style="margin-top: 100px;">
+        <div class="blacktranslucentpadding footer" id="foot">
+          <div class="margin-external">
+            <h2 style="color: #8c8c8c">
+              Questions? Call
+              <a href="tel:000-800-040-1843" style="color: #8c8c8c">000-800-040-1843</a>
+            </h2>
+            <br />
+            <div style="margin-left: auto; margin-right: auto">
+              <table style="color: #8c8c8c">
+                <tr id="row1-foot">
+                  <td id="faq-foot" style="color: #8c8c8c">FAQ</td>
+                  <td id="help-foot" style="color: #8c8c8c">Help Centre</td>
+                  <td id="tou-foot" style="color: #8c8c8c">Terms of Use</td>
+                  <td id="privacy-foot" style="color: #8c8c8c">Privacy</td>
+                </tr>
+                <tr id="row2-foot">
+                  <td id="cookie-foot" style="color: #8c8c8c">
+                    Cookie Preferences
+                  </td>
+                  <td id="corpinfo-foot" style="color: #8c8c8c">
+                    Corporate Information
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+<script src="signIn.js"></script>
+
+</html>
