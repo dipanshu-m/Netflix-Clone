@@ -1,12 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="../../res/netflix-title-icon.png" type="image/icon type" />
+    <link rel="stylesheet" href="loggedin.css">
+    <title>Netflix Clone</title>
 </head>
+
 <body>
-    
+    <main>
+        <header>
+            <div class="header-container">
+                <div class="header-nav margin-external">
+                    <img class="netflix-logo" id="netflixLogo" src="../../res/logo.png" onclick="scrolltotop()">
+                    <h2 class="nav selected">Home</h2>
+                </div>
+                <div class="container margin-external middle">
+                    <h1>Watch Joker Now</h1>
+                    <h2 class="info">Forever alone in a crowd, failed comedian Arthur Fleck <br>
+                        seeks connection as he walks the streets of Gotham City. <br>
+                        Arthur wears two masks, the one he paints for his day job <br>
+                        as a clown, and the guise he projects in a futile attempt to <br>
+                        feel like he is part of the world around him.</h2>
+                    <button class="play-button"><img src="../../res/play.png" class="play-icon">
+                        <h2>Play</h2>
+                    </button>
+                </div>
+                <div class="player-overlay closed" id="vid-player">
+                    <video controls class="player-video" src="../../res/browse/video.mp4" type="video/mp4" id="movie">
+                        <source src="../../res/browse/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="body-container">
+                <div class="videolist margin-external">
+                    <h1>Drama</h1>
+                    <div class="img-containers">
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+                    </div>
+                </div>
+                <div class="videolist margin-external">
+                    <div class="featured fight-club">
+                        <h1 style="padding-bottom: 2vw;">Fight Club</h1>
+                        <div class="rtlformat">
+                            <h2 style="padding-bottom: 3vw;">Discontented with his capitalistic lifestyle, a
+                                white-collared <br>
+                                insomniac forms an underground fight club with Tyler, a <br>
+                                careless soap salesman. The project soon spirals down into <br>
+                                something sinister.
+                            </h2>
+                            <button class="play-button"><img src="../../res/play.png" class="play-icon">
+                                <h2>Play</h2>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="videolist margin-external">
+                    <h1>Documentary</h1>
+                    <div class="img-containers">
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+                    </div>
+                </div>
+
+                <div class="videolist margin-external">
+                    <h1>Crime</h1>
+                    <div class="img-containers">
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+                    </div>
+                </div>
+
+                <div class="videolist margin-external">
+                    <h1>Thriller</h1>
+                    <div class="img-containers">
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+                    </div>
+                </div>
+                <div class="videolist margin-external">
+                    <div class="featured fight-club">
+                        <h1 style="padding-bottom: 2vw;">Fight Club</h1>
+                        <div class="rtlformat">
+                            <h2 style="padding-bottom: 3vw;">Discontented with his capitalistic lifestyle, a
+                                white-collared <br>
+                                insomniac forms an underground fight club with Tyler, a <br>
+                                careless soap salesman. The project soon spirals down into <br>
+                                something sinister.
+                            </h2>
+                            <button class="play-button"><img src="../../res/play.png" class="play-icon">
+                                <h2>Play</h2>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="videolist margin-external">
+                    <h1>Documentary</h1>
+                    <div class="img-containers">
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+                    </div>
+                </div>
+                <div class="videolist margin-external">
+                    <h1>Crime</h1>
+                    <div class="img-containers">
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+                    </div>
+                </div>
+                <div class="videolist margin-external">
+                    <h1>Thriller</h1>
+                    <div class="img-containers">
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+
+                        <img class="imgview" src="../../res/browse/drama/small/fightclub.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/revenant.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/kingspeech.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-prestige.jpg">
+                        <img class="imgview" src="../../res/browse/drama/small/the-social-network.jpg">
+                    </div>
+                </div>
+                <div class="videolist margin-external">
+                    <div class="featured fight-club">
+                        <h1 style="padding-bottom: 2vw;">Fight Club</h1>
+                        <div class="rtlformat">
+                            <h2 style="padding-bottom: 3vw;">Discontented with his capitalistic lifestyle, a
+                                white-collared <br>
+                                insomniac forms an underground fight club with Tyler, a <br>
+                                careless soap salesman. The project soon spirals down into <br>
+                                something sinister.
+                            </h2>
+                            <button class="play-button"><img src="../../res/play.png" class="play-icon">
+                                <h2>Play</h2>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-box margin-external">
+            <div class="row1" style="padding-bottom: 4vw;">
+                <h2>Questions? Call</h2><a href="tel:000-800-040-1843">
+                    <h2 style="padding-left: 0.5vw;">000-800-040-1843</h2>
+                </a>
+            </div>
+            <table>
+                <tr id="row1-foot">
+                    <td id="faq-foot"><a href="#">
+                            <p>FAQ</p>
+                        </a></td>
+                    <td id="help-foot"><a href="#">
+                            <p>Help Centre</p>
+                        </a></td>
+                    <td id="tou-foot"><a href="#">
+                            <p>Terms of Use</p>
+                        </a></td>
+                    <td id="privacy-foot"><a href="#">
+                            <p>Privacy</p>
+                        </a></td>
+                </tr>
+                <tr id="row2-foot">
+                    <td id="cookie-foot"><a href="#">
+                            <p>Cookie Preferences</p>
+                        </a></td>
+                    <td id="corpinfo-foot"><a href="#">
+                            <p>Corporate Information</p>
+                        </a></td>
+                </tr>
+            </table>
+        </div>
+    </footer>
 </body>
+<script src="loggedin.js"></script>
+
 </html>

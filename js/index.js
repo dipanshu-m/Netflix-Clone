@@ -1,30 +1,38 @@
-localStorage.setItem("root","toor");
-localStorage.setItem("signupmail",localStorage.getItem("signupmail"));
-document.getElementById("signupmail1").value=localStorage.getItem("signupmail");
-document.getElementById("signupmail2").value=localStorage.getItem("signupmail");
+localStorage.setItem("root", "toor");
+
+localStorage.setItem("signupmail", localStorage.getItem("signupmail"));
+if (localStorage.getItem("signupmail") === null) {
+    document.getElementById("signupmail1").value = "";
+    document.getElementById("signupmail2").value = "";
+}
+else {
+    document.getElementById("signupmail1").value = localStorage.getItem("signupmail");
+    document.getElementById("signupmail2").value = localStorage.getItem("signupmail");
+}
+
 
 var SignIn = document.getElementById("sign-in");
 SignIn.addEventListener("click", redirectToSignInPage);
 
-let a=0;
+let a = 0;
 
 function a1(e) {
-    a=1;
+    a = 1;
     redirectToSignUpPage();
 }
 var SignUp = document.getElementById("get-started");
 SignUp.addEventListener("click", a1);
 
 var SignUp1enter = document.getElementById("signupmail1");
-SignUp1enter.addEventListener("keyup", (Event)=> {
+SignUp1enter.addEventListener("keyup", (Event) => {
     // console.log(Event.key);
-    if(Event.key==="Enter") {
+    if (Event.key === "Enter") {
         a1();
     }
 });
 
 function a2(e) {
-    a=2;
+    a = 2;
     redirectToSignUpPage();
 }
 
@@ -32,16 +40,16 @@ var SignUp2 = document.getElementById("get-started1");
 SignUp2.addEventListener("click", a2);
 
 var SignUp2enter = document.getElementById("signupmail2");
-SignUp2enter.addEventListener("keyup", (Event)=> {
+SignUp2enter.addEventListener("keyup", (Event) => {
     // console.log(Event.key);
-    if(Event.key==="Enter") {
+    if (Event.key === "Enter") {
         a2();
     }
 });
 
 function redirectToSignUpPage(e) {
     // console.log(a);
-    if(a===1) {
+    if (a === 1) {
         localStorage.setItem("signupmail", document.getElementById("signupmail1").value);
     }
     else {

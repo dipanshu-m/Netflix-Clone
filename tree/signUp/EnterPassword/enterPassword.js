@@ -14,7 +14,7 @@ function submit() {
     var password=document.getElementById("password").value;
     console.log(password);
     localStorage.setItem(signupmail, password);
-
+    
 }
 
 var homepage = document.getElementById("netflixLogo").addEventListener("click", () => {
@@ -22,5 +22,5 @@ var homepage = document.getElementById("netflixLogo").addEventListener("click", 
 })
 
 var nextstep = document.getElementById("nextid").addEventListener("click", () => {
-    open("EnterPassword/enterPassword.html", "_self");
+    open("../../NetflixLoggedInPage/loggedin.html", "_self");
 })
