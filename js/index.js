@@ -1,7 +1,7 @@
 localStorage.setItem("root", "toor");
 
 localStorage.setItem("signupmail", localStorage.getItem("signupmail"));
-if (localStorage.getItem("signupmail") === null) {
+if (localStorage.getItem("signupmail") === "null") {
     document.getElementById("signupmail1").value = "";
     document.getElementById("signupmail2").value = "";
 }
