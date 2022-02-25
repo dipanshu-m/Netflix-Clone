@@ -50,27 +50,27 @@ var submit = document.getElementById("sign-in").addEventListener("click", signin
 //pressed enter
 var emailid = document.getElementById("emailaddressinputvalue");
 var uname;
+var passid = document.getElementById("passwordinput");
+var pass;
+
 emailid.addEventListener("keyup", (Event) => {
   if (Event.key === "Enter") {
     uname = emailid.value;
     pass = passid.value;
-    console.log(uname);
+    // console.log(uname);
     signin();
   }
-    
 })
-var passid = document.getElementById("passwordinput");
-var pass;
 document.getElementById("passwordinput").addEventListener("keyup", (Event) => {
   if (Event.key === "Enter") {
     uname = emailid.value;
     pass = passid.value;
-    console.log(pass);
+    // console.log(pass);
     signin();
   }
 })
 function signin(e) {
-  if (localStorage.getItem(uname) !== pass) {
+  if (localStorage.getItem(uname) !== pass ) {
     document.getElementById("errorshow").classList.remove("closed")
   }
   else {
